@@ -11,7 +11,7 @@ int main()
 for(int i=0;i<n;i++){
      cin>>a[i];
 }
-memset(a,0,sizeof(a));
+memset(a,2,sizeof(a));
 cout<<"new array"<<endl;
 for(int j=0;j<n;j++){  
 cout<<a[j];
