@@ -19,6 +19,6 @@ int main()
         cin>>arr[i];
     }
     int uniqueElement=findunique(arr);
-    cout<<"unique element is"<<uniqueElement<<endl;
+    cout<<"unique element is "<<uniqueElement<<endl;
  
 }
