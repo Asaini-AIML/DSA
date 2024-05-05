@@ -1,21 +1,12 @@
 #include<iostream>
 #include<vector>
+#include<map>
 using namespace std;
-int solve(vector<int>& vp,int n){
+int solve(vector<int>& vp,vector<int>& gp,vector<int>& lp,int n){
     
-    vector<int>hash(n);
-    for(int i=0;i<n;i++){
-        if(vp[i]<=n){
-            hash[vp[i]-1]++;
-        }
-    }
-    int m;
-    for(int i=0;i<n-1;i++){
-        if(hash[i]==0){
-            m=i+1;  
-        }
-    }
-    return m;
+    map<int,int>rp;
+    map<int,int>mp1;
+    
 }
 int main()
 {   int n;
@@ -24,7 +15,15 @@ cin>>n;
     for(int i=0;i<n;i++){
         cin>>vp[i];
     }
-   int r=solve(vp,n);
+     vector<int>gp(n);
+    for(int i=0;i<n;i++){
+        cin>>gp[i];
+    }
+     vector<int>lp(n);
+    for(int i=0;i<n;i++){
+        cin>>lp[i];
+    }
+   int r=solve(vp,gp,lp,n);
    cout<<"mila?"<<r;
  return 0;
 }
